@@ -1,0 +1,16 @@
+﻿@model  AuthenticationInNet.Models.LoginModel
+
+
+<form asp-action="Index" asp-controller="Account" method="post">
+
+    <input type="hidden" asp-for="ReturnUrl" />
+
+    <input type="text" asp-for="UserName" />
+
+    <input type="text" asp-for="Password"/>
+
+    <input type="checkbox" asp-for="RememberMe"/>
+
+    <input type="submit" value="Login"/>
+
+</form>
